@@ -1,8 +1,14 @@
 <svelte:head>
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="true" />
+	<link
+		href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap"
+		rel="stylesheet"
+	/>
 	<title>Clipboard Landing Page</title>
 </svelte:head>
 
-<!-- A history of everything you copy -->
+A history of everything you copy
 
 <!-- Clipboard allows you to track and organize everything you  -->
 <!-- copy. Instantly access your clipboard on all your devices. -->
