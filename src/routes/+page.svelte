@@ -1,3 +1,7 @@
+<script lang="ts">
+	import DownloadButton from '$lib/UI/DownloadButton.svelte';
+</script>
+
 <svelte:head>
 	<link rel="preconnect" href="https://fonts.googleapis.com" />
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="true" />
@@ -8,10 +12,79 @@
 	<title>Clipboard Landing Page</title>
 </svelte:head>
 
-A history of everything you copy
+<header
+	class="
+        bg-[url('images/bg-header-mobile.png')]
+        md:bg-[url('images/bg-header-desktop.png')]
+        bg-no-repeat
+        bg-contain
+        bg-top
+        mx-auto
+        pt-32
+        px-8
+        text-center
+        space-y-16
+        md:space-y-14
+        bg-blend-normal
+    "
+>
+	<img src="images/logo.svg" alt="Logo" class="w-32 h-32 mx-auto" />
 
-<!-- Clipboard allows you to track and organize everything you  -->
-<!-- copy. Instantly access your clipboard on all your devices. -->
+	<div
+		class="
+            max-w-3xl
+            text-center
+            mx-auto
+            space-y-4
+        "
+	>
+		<h1
+			class="
+                text-darkGrayishBlue
+                text-3xl
+                tracking-[-0.52px]
+                md:text-5xl
+                md:tracking-[-0.75px]
+                leading-tight
+                font-semibold
+            "
+		>
+			A history of everything you copy
+		</h1>
+
+		<p
+			class="
+                md:text-xl
+                tracking-[0.12px]
+                text-grayishBlue
+                leading-relaxed
+                md:leading-normal
+            "
+		>
+			Clipboard allows you to track and organize everything you copy. Instantly access your
+			clipboard on all your devices.
+		</p>
+	</div>
+
+	<div
+		class="
+            mt-12
+            flex
+            flex-col
+            md:flex-row
+            mx-auto
+            space-y-6
+            md:space-y-0
+            md:space-x-4
+            items-stretch
+            md:items-center
+            justify-center
+            md:max-w-fit"
+	>
+		<DownloadButton url="#" bg="bg-strongCyan">Download for iOS</DownloadButton>
+		<DownloadButton url="#" bg="bg-lightBlue">Download for Mac</DownloadButton>
+	</div>
+</header>
 
 <!-- Download for iOS -->
 <!-- Download for Mac -->
