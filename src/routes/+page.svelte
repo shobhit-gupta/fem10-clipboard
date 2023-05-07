@@ -27,6 +27,7 @@
         text-center
         space-y-16
         md:space-y-14
+        select-none
     "
 >
 	<img src="images/logo.svg" alt="Logo" class="w-32 h-32 mx-auto" />
