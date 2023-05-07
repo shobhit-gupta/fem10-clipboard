@@ -87,19 +87,19 @@
                 text-center
             "
 		>
-			<HeaderParagraph tag="h3">
+			<HeaderParagraph tag="h3" alignment="text-center md:text-left">
 				<svelte:fragment slot="h">Quick Search</svelte:fragment>
 				<svelte:fragment slot="p">
 					Easily search your snippets by content, category, web address, application, and more.
 				</svelte:fragment>
 			</HeaderParagraph>
-			<HeaderParagraph tag="h3">
+			<HeaderParagraph tag="h3" alignment="text-center md:text-left">
 				<svelte:fragment slot="h">iCloud Sync</svelte:fragment>
 				<svelte:fragment slot="p">
 					Instantly saves and syncs snippets across all your devices.
 				</svelte:fragment>
 			</HeaderParagraph>
-			<HeaderParagraph tag="h3">
+			<HeaderParagraph tag="h3" alignment="text-center md:text-left">
 				<svelte:fragment slot="h">Complete History</svelte:fragment>
 				<svelte:fragment slot="p">
 					Retrieve any snippets from the first moment you started using the app.
@@ -117,24 +117,57 @@
 			few simple clicks.
 		</svelte:fragment>
 	</HeaderParagraph>
-	<img src="images/image-devices.png" alt="" class="mx-auto mt-16 md:mt-28" />
+	<img src="images/image-devices.png" alt="" class="mx-auto mt-16 md:mt-28 mb-0" />
 </section>
 
-<!-- Supercharge your workflow -->
+<section class="mt-20 md:mt-24 md:max-w-fit">
+	<HeaderParagraph tag="h2">
+		<svelte:fragment slot="h">Supercharge your workflow</svelte:fragment>
+		<svelte:fragment slot="p">We’ve got the tools to boost your productivity.</svelte:fragment>
+	</HeaderParagraph>
+	<div class="mt-24 md:mt-18 grid grid-cols-1 md:grid-cols-3 gap-14 md:gap-8">
+		<div class="flex flex-col items-center space-y-11">
+			<img src="images/icon-blacklist.svg" alt="" class="w-11 h-10" />
+			<HeaderParagraph tag="h3">
+				<svelte:fragment slot="h">Create blacklists</svelte:fragment>
+				<svelte:fragment slot="p">
+					Ensure sensitive information never makes its way to your clipboard by excluding certain
+					sources.
+				</svelte:fragment>
+			</HeaderParagraph>
+		</div>
+		<div class="flex flex-col items-center space-y-11">
+			<img src="images/icon-text.svg" alt="" class="w-9 h-8" />
+			<HeaderParagraph tag="h3">
+				<svelte:fragment slot="h">Plain text snippets</svelte:fragment>
+				<svelte:fragment slot="p">
+					Remove unwanted formatting from copied text for a consistent look.
+				</svelte:fragment>
+			</HeaderParagraph>
+		</div>
+		<div class="flex flex-col items-center space-y-11">
+			<img src="images/icon-preview.svg" alt="" class="w-12 h-8" />
+			<HeaderParagraph tag="h3">
+				<svelte:fragment slot="h">Sneak preview</svelte:fragment>
+				<svelte:fragment slot="p">
+					Quick preview of all snippets on your Clipboard for easy access.
+				</svelte:fragment>
+			</HeaderParagraph>
+		</div>
+	</div>
+</section>
 
-<!-- We’ve got the tools to boost your productivity. -->
+<!--  -->
 
-<!-- Create blacklists -->
+<!--  -->
 
-<!-- Ensure sensitive information never makes its way to your clipboard by excluding certain sources. -->
+<!--  -->
 
-<!-- Plain text snippets -->
+<!--  -->
 
-<!-- Remove unwanted formatting from copied text for a consistent look. -->
+<!--  -->
 
-<!-- Sneak preview -->
-
-<!-- Quick preview of all snippets on your Clipboard for easy access. -->
+<!--  -->
 
 <!-- Clipboard for iOS and Mac OS -->
 

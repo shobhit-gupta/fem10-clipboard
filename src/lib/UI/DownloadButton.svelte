@@ -17,8 +17,9 @@
         leading-relaxed
         tracking-[0.5px]
         text-center
-        drop-shadow-lg
-        shadow-inner
+        shadow-lg
+        border-b-2
+        border-black/10
     "
 >
 	<slot />

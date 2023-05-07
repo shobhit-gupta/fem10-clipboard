@@ -1,8 +1,14 @@
 <script lang="ts">
 	export let tag: 'h1' | 'h2' | 'h3';
+	export let alignment = 'text-center';
 </script>
 
-<div class:h-p1={tag === 'h1'} class:h-p2={tag === 'h2'} class:h-p3={tag === 'h3'}>
+<div
+	class:h-p1={tag === 'h1'}
+	class:h-p2={tag === 'h2'}
+	class:h-p3={tag === 'h3'}
+	class={alignment}
+>
 	<svelte:element
 		this={tag}
 		class="
