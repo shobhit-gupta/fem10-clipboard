@@ -88,26 +88,148 @@
 	</div>
 </header>
 
-<!-- Download for iOS -->
-<!-- Download for Mac -->
+<section class="mt-32 md:mt-40 mx-auto px-8">
+	<div
+		class="
+            max-w-3xl
+            text-center
+            mx-auto
+            space-y-4
+            md:space-y-5
+        "
+	>
+		<h2
+			class="
+                text-darkGrayishBlue
+                text-[1.75rem]
+                md:text-4xl
+                tracking-[-0.46px]
+                md:tracking-[-0.59px]
+                leading-tight
+                font-semibold
+            "
+		>
+			Keep track of your snippets
+		</h2>
 
-<!-- Keep track of your snippets -->
+		<p
+			class="
+                md:text-lg
+                tracking-[0.12px]
+                md:tracking-[0.14px]
+                text-grayishBlue
+                leading-7
+                md:leading-8
+            "
+		>
+			Clipboard instantly stores any item you copy in the cloud, meaning you can access your
+			snippets immediately on all your devices. Our Mac and iOS apps will help you organize
+			everything.
+		</p>
+	</div>
 
-<!-- Clipboard instantly stores any item you copy in the cloud,  -->
-<!-- meaning you can access your snippets immediately on all your  -->
-<!-- devices. Our Mac and iOS apps will help you organize everything. -->
+	<div class="mt-16 md:mt-20 grid grid-cols-1 md:grid-cols-2 mx-auto gap-14 md:gap-28">
+		<img src="images/image-computer.png" alt="" class="md:max-w-none md:place-self-end" />
 
-<!-- Quick Search -->
+		<div
+			class="flex flex-col space-y-12 md:space-y-14 md:py-16 text-center md:text-left mx-auto md:mx-0"
+		>
+			<div
+				class="
+                    max-w-[350px]
+                    space-y-3
+                    md:space-y-2
+                "
+			>
+				<h3
+					class="
+                        text-darkGrayishBlue
+                        text-2xl
+                        tracking-[-0.39px]
+                        leading-tight
+                        font-semibold
+                    "
+				>
+					Quick Search
+				</h3>
 
-<!-- Easily search your snippets by content, category, web address, application, and more. -->
+				<p
+					class="
+                        text-base
+                        tracking-[0.12px]
+                        text-grayishBlue
+                        leading-7
+                        md:leading-8
+                    "
+				>
+					Easily search your snippets by content, category, web address, application, and more.
+				</p>
+			</div>
+			<div
+				class="
+                    max-w-[350px]
+                    space-y-3
+                    md:space-y-2
+                "
+			>
+				<h3
+					class="
+                        text-darkGrayishBlue
+                        text-2xl
+                        tracking-[-0.39px]
+                        leading-tight
+                        font-semibold
+                    "
+				>
+					iCloud Sync
+				</h3>
 
-<!-- iCloud Sync -->
+				<p
+					class="
+                        text-base
+                        tracking-[0.12px]
+                        text-grayishBlue
+                        leading-7
+                        md:leading-8
+                    "
+				>
+					Instantly saves and syncs snippets across all your devices.
+				</p>
+			</div>
+			<div
+				class="
+                    max-w-[350px]
+                    space-y-3
+                    md:space-y-2
+                "
+			>
+				<h3
+					class="
+                        text-darkGrayishBlue
+                        text-2xl
+                        tracking-[-0.39px]
+                        leading-tight
+                        font-semibold
+                    "
+				>
+					Complete History
+				</h3>
 
-<!-- Instantly saves and syncs snippets across all your devices. -->
-
-<!-- Complete History -->
-
-<!-- Retrieve any snippets from the first moment you started using the app. -->
+				<p
+					class="
+                        text-base
+                        tracking-[0.12px]
+                        text-grayishBlue
+                        leading-7
+                        md:leading-8
+                    "
+				>
+					Retrieve any snippets from the first moment you started using the app.
+				</p>
+			</div>
+		</div>
+	</div>
+</section>
 
 <!-- Access Clipboard anywhere -->
 
