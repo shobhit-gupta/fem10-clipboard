@@ -17,7 +17,8 @@
         bg-[url('images/bg-header-mobile.png')]
         md:bg-[url('images/bg-header-desktop.png')]
         bg-no-repeat
-        bg-contain
+        bg-cover
+        md:bg-contain
         bg-top
         mx-auto
         pt-32
@@ -25,7 +26,6 @@
         text-center
         space-y-16
         md:space-y-14
-        bg-blend-normal
     "
 >
 	<img src="images/logo.svg" alt="Logo" class="w-32 h-32 mx-auto" />
@@ -36,14 +36,15 @@
             text-center
             mx-auto
             space-y-4
+            md:space-y-5
         "
 	>
 		<h1
 			class="
                 text-darkGrayishBlue
                 text-3xl
-                tracking-[-0.52px]
                 md:text-5xl
+                tracking-[-0.52px]
                 md:tracking-[-0.75px]
                 leading-tight
                 font-semibold
@@ -56,9 +57,10 @@
 			class="
                 md:text-xl
                 tracking-[0.12px]
+                md:tracking-[0.15px]
                 text-grayishBlue
-                leading-relaxed
-                md:leading-normal
+                leading-7
+                md:leading-8
             "
 		>
 			Clipboard allows you to track and organize everything you copy. Instantly access your
