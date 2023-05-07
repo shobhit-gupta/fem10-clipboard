@@ -53,14 +53,15 @@
             items-stretch
             md:items-center
             justify-center
-            md:max-w-fit"
+            md:max-w-fit
+        "
 	>
 		<DownloadButton url="#" bg="bg-strongCyan">Download for iOS</DownloadButton>
 		<DownloadButton url="#" bg="bg-lightBlue">Download for Mac</DownloadButton>
 	</div>
 </header>
 
-<section class="mt-32 md:mt-40 mx-auto px-8">
+<section>
 	<HeaderParagraph tag="h2">
 		<svelte:fragment slot="h">Keep track of your snippets</svelte:fragment>
 		<svelte:fragment slot="p">
@@ -108,10 +109,16 @@
 	</div>
 </section>
 
-<!-- Access Clipboard anywhere -->
-
-<!-- Whether you’re on the go, or at your computer, you can access all your Clipboard  -->
-<!-- snippets in a few simple clicks. -->
+<section>
+	<HeaderParagraph tag="h2">
+		<svelte:fragment slot="h">Access Clipboard Anywhere</svelte:fragment>
+		<svelte:fragment slot="p">
+			Whether you’re on the go, or at your computer, you can access all your Clipboard snippets in a
+			few simple clicks.
+		</svelte:fragment>
+	</HeaderParagraph>
+	<img src="images/image-devices.png" alt="" class="mx-auto mt-16 md:mt-28" />
+</section>
 
 <!-- Supercharge your workflow -->
 
