@@ -1,5 +1,5 @@
 <script lang="ts">
-	import DownloadButton from '$lib/UI/DownloadButton.svelte';
+	import Cta from '$lib/UI/CTA.svelte';
 	import HeaderParagraph from '$lib/UI/HeaderParagraph.svelte';
 </script>
 
@@ -40,25 +40,7 @@
 		</svelte:fragment>
 	</HeaderParagraph>
 
-	<div
-		class="
-            mt-12
-            flex
-            flex-col
-            md:flex-row
-            mx-auto
-            space-y-6
-            md:space-y-0
-            md:space-x-4
-            items-stretch
-            md:items-center
-            justify-center
-            md:max-w-fit
-        "
-	>
-		<DownloadButton url="#" bg="bg-strongCyan">Download for iOS</DownloadButton>
-		<DownloadButton url="#" bg="bg-lightBlue">Download for Mac</DownloadButton>
-	</div>
+	<Cta />
 </header>
 
 <section>
@@ -181,10 +163,18 @@
 	</div>
 </section>
 
-<!-- Clipboard for iOS and Mac OS -->
+<section>
+	<HeaderParagraph tag="h2">
+		<svelte:fragment slot="h">Clipboard for iOS and Mac OS</svelte:fragment>
+		<svelte:fragment slot="p">
+			Available for free on the App Store. Download for Mac or iOS, sync with iCloud and you’re
+			ready to start adding to your clipboard.
+		</svelte:fragment>
+	</HeaderParagraph>
+	<Cta />
+</section>
 
-<!-- Available for free on the App Store. Download for Mac or iOS, sync with iCloud  -->
-<!-- and you’re ready to start adding to your clipboard. -->
+<!--  -->
 
 <!-- Download for iOS -->
 <!-- Download for Mac -->

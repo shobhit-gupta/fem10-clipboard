@@ -9,6 +9,9 @@
 	section {
 		@apply mt-32 md:mt-40 mx-auto px-8;
 	}
+	section:last-of-type {
+		@apply mb-32;
+	}
 }
 
 @layer components {
