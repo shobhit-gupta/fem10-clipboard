@@ -157,17 +157,29 @@
 	</div>
 </section>
 
-<!--  -->
-
-<!--  -->
-
-<!--  -->
-
-<!--  -->
-
-<!--  -->
-
-<!--  -->
+<section>
+	<div
+		class="flex flex-col md:flex-row justify-center items-center flex-wrap gap-14 md:max-w-fit mx-auto"
+	>
+		<img
+			src="images/logo-google.png"
+			alt="Logo of Google"
+			class="object-scale-down shrink grow-0"
+		/>
+		<img src="images/logo-ibm.png" alt="Logo of IBM" class="object-scale-down shrink grow-0" />
+		<img
+			src="images/logo-microsoft.png"
+			alt="Logo of Microsoft"
+			class="object-scale-down shrink grow-0"
+		/>
+		<img src="images/logo-hp.png" alt="Logo of HP" class="object-scale-down shrink grow-0" />
+		<img
+			src="images/logo-vector-graphics.png"
+			alt="Logo of Vector Graphics"
+			class="object-scale-down shrink grow-0"
+		/>
+	</div>
+</section>
 
 <!-- Clipboard for iOS and Mac OS -->
 
