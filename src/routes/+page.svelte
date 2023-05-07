@@ -1,5 +1,6 @@
 <script lang="ts">
 	import DownloadButton from '$lib/UI/DownloadButton.svelte';
+	import HeaderParagraph from '$lib/UI/HeaderParagraph.svelte';
 </script>
 
 <svelte:head>
@@ -30,43 +31,13 @@
 >
 	<img src="images/logo.svg" alt="Logo" class="w-32 h-32 mx-auto" />
 
-	<div
-		class="
-            max-w-3xl
-            text-center
-            mx-auto
-            space-y-4
-            md:space-y-5
-        "
-	>
-		<h1
-			class="
-                text-darkGrayishBlue
-                text-3xl
-                md:text-5xl
-                tracking-[-0.52px]
-                md:tracking-[-0.75px]
-                leading-tight
-                font-semibold
-            "
-		>
-			A history of everything you copy
-		</h1>
-
-		<p
-			class="
-                md:text-xl
-                tracking-[0.12px]
-                md:tracking-[0.15px]
-                text-grayishBlue
-                leading-7
-                md:leading-8
-            "
-		>
+	<HeaderParagraph tag="h1">
+		<svelte:fragment slot="h">A history of everything you copy</svelte:fragment>
+		<svelte:fragment slot="p">
 			Clipboard allows you to track and organize everything you copy. Instantly access your
 			clipboard on all your devices.
-		</p>
-	</div>
+		</svelte:fragment>
+	</HeaderParagraph>
 
 	<div
 		class="
@@ -89,144 +60,49 @@
 </header>
 
 <section class="mt-32 md:mt-40 mx-auto px-8">
-	<div
-		class="
-            max-w-3xl
-            text-center
-            mx-auto
-            space-y-4
-            md:space-y-5
-        "
-	>
-		<h2
-			class="
-                text-darkGrayishBlue
-                text-[1.75rem]
-                md:text-4xl
-                tracking-[-0.46px]
-                md:tracking-[-0.59px]
-                leading-tight
-                font-semibold
-            "
-		>
-			Keep track of your snippets
-		</h2>
-
-		<p
-			class="
-                md:text-lg
-                tracking-[0.12px]
-                md:tracking-[0.14px]
-                text-grayishBlue
-                leading-7
-                md:leading-8
-            "
-		>
+	<HeaderParagraph tag="h2">
+		<svelte:fragment slot="h">Keep track of your snippets</svelte:fragment>
+		<svelte:fragment slot="p">
 			Clipboard instantly stores any item you copy in the cloud, meaning you can access your
 			snippets immediately on all your devices. Our Mac and iOS apps will help you organize
 			everything.
-		</p>
-	</div>
+		</svelte:fragment>
+	</HeaderParagraph>
 
 	<div class="mt-16 md:mt-20 grid grid-cols-1 md:grid-cols-2 mx-auto gap-14 md:gap-28">
 		<img src="images/image-computer.png" alt="" class="md:max-w-none md:place-self-end" />
 
 		<div
-			class="flex flex-col space-y-12 md:space-y-14 md:py-16 text-center md:text-left mx-auto md:mx-0"
+			class="
+                flex
+                flex-col
+                space-y-12
+                md:space-y-14
+                md:py-16
+                md:text-left
+                mx-auto
+                md:mx-0
+                text-center
+            "
 		>
-			<div
-				class="
-                    max-w-[350px]
-                    space-y-3
-                    md:space-y-2
-                "
-			>
-				<h3
-					class="
-                        text-darkGrayishBlue
-                        text-2xl
-                        tracking-[-0.39px]
-                        leading-tight
-                        font-semibold
-                    "
-				>
-					Quick Search
-				</h3>
-
-				<p
-					class="
-                        text-base
-                        tracking-[0.12px]
-                        text-grayishBlue
-                        leading-7
-                        md:leading-8
-                    "
-				>
+			<HeaderParagraph tag="h3">
+				<svelte:fragment slot="h">Quick Search</svelte:fragment>
+				<svelte:fragment slot="p">
 					Easily search your snippets by content, category, web address, application, and more.
-				</p>
-			</div>
-			<div
-				class="
-                    max-w-[350px]
-                    space-y-3
-                    md:space-y-2
-                "
-			>
-				<h3
-					class="
-                        text-darkGrayishBlue
-                        text-2xl
-                        tracking-[-0.39px]
-                        leading-tight
-                        font-semibold
-                    "
-				>
-					iCloud Sync
-				</h3>
-
-				<p
-					class="
-                        text-base
-                        tracking-[0.12px]
-                        text-grayishBlue
-                        leading-7
-                        md:leading-8
-                    "
-				>
+				</svelte:fragment>
+			</HeaderParagraph>
+			<HeaderParagraph tag="h3">
+				<svelte:fragment slot="h">iCloud Sync</svelte:fragment>
+				<svelte:fragment slot="p">
 					Instantly saves and syncs snippets across all your devices.
-				</p>
-			</div>
-			<div
-				class="
-                    max-w-[350px]
-                    space-y-3
-                    md:space-y-2
-                "
-			>
-				<h3
-					class="
-                        text-darkGrayishBlue
-                        text-2xl
-                        tracking-[-0.39px]
-                        leading-tight
-                        font-semibold
-                    "
-				>
-					Complete History
-				</h3>
-
-				<p
-					class="
-                        text-base
-                        tracking-[0.12px]
-                        text-grayishBlue
-                        leading-7
-                        md:leading-8
-                    "
-				>
+				</svelte:fragment>
+			</HeaderParagraph>
+			<HeaderParagraph tag="h3">
+				<svelte:fragment slot="h">Complete History</svelte:fragment>
+				<svelte:fragment slot="p">
 					Retrieve any snippets from the first moment you started using the app.
-				</p>
-			</div>
+				</svelte:fragment>
+			</HeaderParagraph>
 		</div>
 	</div>
 </section>

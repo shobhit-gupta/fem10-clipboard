@@ -7,3 +7,35 @@
 		@apply text-base md:text-lg;
 	}
 }
+
+@layer components {
+	.h-p1 {
+		@apply max-w-3xl text-center mx-auto space-y-4 md:space-y-5;
+	}
+	.h-p1__h {
+		@apply text-3xl md:text-5xl tracking-[-0.52px] md:tracking-[-0.75px];
+	}
+	.h-p1__p {
+		@apply md:text-xl tracking-[0.12px] md:tracking-[0.15px];
+	}
+
+	.h-p2 {
+		@apply max-w-3xl text-center mx-auto space-y-4 md:space-y-5;
+	}
+	.h-p2__h {
+		@apply text-[1.75rem] md:text-4xl tracking-[-0.46px] md:tracking-[-0.59px];
+	}
+	.h-p2__p {
+		@apply md:text-lg tracking-[0.12px] md:tracking-[0.14px];
+	}
+
+	.h-p3 {
+		@apply max-w-[350px] space-y-3 md:space-y-2;
+	}
+	.h-p3__h {
+		@apply text-2xl tracking-[-0.39px];
+	}
+	.h-p3__p {
+		@apply text-base tracking-[0.12px];
+	}
+}
