@@ -8,12 +8,13 @@
         bg-grayishBlue/10
         py-10
         md:flex-row
-        md:gap-36
+        md:gap-16
+		lg:gap-36
     "
 >
 	<img src="images/logo.svg" alt="" class="h-14 w-14" />
 	<div
-		class="grid grid-cols-1 gap-5 text-center tracking-[0.135px] text-darkGrayishBlue md:max-w-fit md:grid-cols-3 md:gap-x-8 md:gap-y-3 md:text-left"
+		class="grid shrink-0 grid-cols-1 gap-5 text-center tracking-[0.135px] text-darkGrayishBlue md:max-w-fit md:grid-cols-3 md:gap-x-8 md:gap-y-3 md:text-left"
 	>
 		<a href="/" class="hover:text-strongCyan md:order-1">FAQs</a>
 		<a href="/" class="hover:text-strongCyan md:order-4">Contact Us</a>
