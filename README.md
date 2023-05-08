@@ -28,8 +28,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Github Repo](https://github.com/shobhit-gupta/fem10-clipboard/tree/main)
+- Live Site URL: [https://fem10-clipboard-shobhit-gupta.vercel.app/](https://fem10-clipboard-shobhit-gupta.vercel.app/)
 
 ## My process
 
@@ -46,5 +46,6 @@ Users should be able to:
 - Rapid development then refactoring
 - `place-self` CSS property
 - Change SVG fill color on interaction with tailwindcss
+- Assets in sveltekit apps should be referred with a preceding forward slash
 - `@sveltejs/adapter-static`
 - Deploying SSG SvelteKit project to Vercel
