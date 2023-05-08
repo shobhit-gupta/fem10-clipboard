@@ -12,6 +12,18 @@
 	section:last-of-type {
 		@apply mb-32;
 	}
+
+	/* fix: Workaround for SvelteKit or Vite issue.
+	   Refer: https://github.com/sveltejs/kit/issues/5240
+	*/
+	header {
+		background-image: url('images/bg-header-mobile.png');
+	}
+	@media (min-width: 768px) {
+		header {
+			background-image: url('images/bg-header-desktop.png');
+		}
+	}
 }
 
 @layer components {

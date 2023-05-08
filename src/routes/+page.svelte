@@ -23,7 +23,6 @@
         mx-auto
         select-none
         space-y-16
-        bg-[url('images/bg-header-mobile.png')]
         bg-cover
         bg-top
         bg-no-repeat
@@ -31,7 +30,6 @@
         pt-32
         text-center
         md:space-y-14
-        md:bg-[url('images/bg-header-desktop.png')]
         md:bg-contain
     "
 >
