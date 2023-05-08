@@ -1,7 +1,11 @@
 <script lang="ts">
+	import type { PageData } from './$types';
 	import Cta from '$lib/UI/CTA.svelte';
 	import HeaderParagraph from '$lib/UI/HeaderParagraph.svelte';
 	import Footer from '$lib/UI/Footer.svelte';
+
+	export let data;
+	const text = data.text;
 </script>
 
 <svelte:head>
@@ -32,26 +36,17 @@
     "
 >
 	<img src="images/logo.svg" alt="Logo" class="mx-auto h-32 w-32" />
-
 	<HeaderParagraph tag="h1">
-		<svelte:fragment slot="h">A history of everything you copy</svelte:fragment>
-		<svelte:fragment slot="p">
-			Clipboard allows you to track and organize everything you copy. Instantly access your
-			clipboard on all your devices.
-		</svelte:fragment>
+		<svelte:fragment slot="h">{text.sections.hero.title}</svelte:fragment>
+		<svelte:fragment slot="p">{text.sections.hero.subtitle}</svelte:fragment>
 	</HeaderParagraph>
-
 	<Cta />
 </header>
 
-<section>
+<section id="snippets">
 	<HeaderParagraph tag="h2">
-		<svelte:fragment slot="h">Keep track of your snippets</svelte:fragment>
-		<svelte:fragment slot="p">
-			Clipboard instantly stores any item you copy in the cloud, meaning you can access your
-			snippets immediately on all your devices. Our Mac and iOS apps will help you organize
-			everything.
-		</svelte:fragment>
+		<svelte:fragment slot="h">{text.sections.snippets.title}</svelte:fragment>
+		<svelte:fragment slot="p">{text.sections.snippets.subtitle}</svelte:fragment>
 	</HeaderParagraph>
 
 	<div class="mx-auto mt-16 grid grid-cols-1 gap-14 md:mt-20 md:grid-cols-2 md:gap-28">
@@ -70,107 +65,66 @@
                 md:text-left
             "
 		>
-			<HeaderParagraph tag="h3" alignment="text-center md:text-left">
-				<svelte:fragment slot="h">Quick Search</svelte:fragment>
-				<svelte:fragment slot="p">
-					Easily search your snippets by content, category, web address, application, and more.
-				</svelte:fragment>
-			</HeaderParagraph>
-			<HeaderParagraph tag="h3" alignment="text-center md:text-left">
-				<svelte:fragment slot="h">iCloud Sync</svelte:fragment>
-				<svelte:fragment slot="p">
-					Instantly saves and syncs snippets across all your devices.
-				</svelte:fragment>
-			</HeaderParagraph>
-			<HeaderParagraph tag="h3" alignment="text-center md:text-left">
-				<svelte:fragment slot="h">Complete History</svelte:fragment>
-				<svelte:fragment slot="p">
-					Retrieve any snippets from the first moment you started using the app.
-				</svelte:fragment>
-			</HeaderParagraph>
+			{#each text.snippets as { title, subtitle }}
+				<HeaderParagraph tag="h3" alignment="text-center md:text-left">
+					<svelte:fragment slot="h">{title}</svelte:fragment>
+					<svelte:fragment slot="p">{subtitle}</svelte:fragment>
+				</HeaderParagraph>
+			{/each}
 		</div>
 	</div>
 </section>
 
 <section>
 	<HeaderParagraph tag="h2">
-		<svelte:fragment slot="h">Access Clipboard Anywhere</svelte:fragment>
-		<svelte:fragment slot="p">
-			Whether you’re on the go, or at your computer, you can access all your Clipboard snippets in a
-			few simple clicks.
-		</svelte:fragment>
+		<svelte:fragment slot="h">{text.sections.access.title}</svelte:fragment>
+		<svelte:fragment slot="p">{text.sections.access.subtitle}</svelte:fragment>
 	</HeaderParagraph>
 	<img src="images/image-devices.png" alt="" class="mx-auto mb-0 mt-16 md:mt-28" />
 </section>
 
-<section class="mt-20 md:mt-24 md:max-w-fit">
+<section id="features" class="mt-20 md:mt-24 md:max-w-fit">
 	<HeaderParagraph tag="h2">
-		<svelte:fragment slot="h">Supercharge your workflow</svelte:fragment>
-		<svelte:fragment slot="p">We’ve got the tools to boost your productivity.</svelte:fragment>
+		<svelte:fragment slot="h">{text.sections.features.title}</svelte:fragment>
+		<svelte:fragment slot="p">{text.sections.features.subtitle}</svelte:fragment>
 	</HeaderParagraph>
 	<div class="md:mt-18 mt-24 grid grid-cols-1 gap-14 md:grid-cols-3 md:gap-8">
-		<div class="flex flex-col items-center space-y-11">
-			<img src="images/icon-blacklist.svg" alt="" class="h-10 w-11" />
-			<HeaderParagraph tag="h3">
-				<svelte:fragment slot="h">Create blacklists</svelte:fragment>
-				<svelte:fragment slot="p">
-					Ensure sensitive information never makes its way to your clipboard by excluding certain
-					sources.
-				</svelte:fragment>
-			</HeaderParagraph>
-		</div>
-		<div class="flex flex-col items-center space-y-11">
-			<img src="images/icon-text.svg" alt="" class="h-8 w-9" />
-			<HeaderParagraph tag="h3">
-				<svelte:fragment slot="h">Plain text snippets</svelte:fragment>
-				<svelte:fragment slot="p">
-					Remove unwanted formatting from copied text for a consistent look.
-				</svelte:fragment>
-			</HeaderParagraph>
-		</div>
-		<div class="flex flex-col items-center space-y-11">
-			<img src="images/icon-preview.svg" alt="" class="h-8 w-12" />
-			<HeaderParagraph tag="h3">
-				<svelte:fragment slot="h">Sneak preview</svelte:fragment>
-				<svelte:fragment slot="p">
-					Quick preview of all snippets on your Clipboard for easy access.
-				</svelte:fragment>
-			</HeaderParagraph>
-		</div>
+		{#each text.features as { icon: src, title: h, subtitle: p }}
+			<div class="flex flex-col items-center space-y-11">
+				<img {src} alt="" />
+				<HeaderParagraph tag="h3">
+					<svelte:fragment slot="h">{h}</svelte:fragment>
+					<svelte:fragment slot="p">{p}</svelte:fragment>
+				</HeaderParagraph>
+			</div>
+		{/each}
 	</div>
 </section>
 
-<section>
+<section id="customers">
 	<div
-		class="mx-auto flex flex-col flex-wrap items-center justify-center gap-14 md:max-w-fit md:flex-row"
+		class="
+			mx-auto
+			flex
+			flex-col
+			flex-wrap
+			items-center
+			justify-center
+			gap-14
+			md:max-w-fit
+			md:flex-row
+		"
 	>
-		<img
-			src="images/logo-google.png"
-			alt="Logo of Google"
-			class="shrink grow-0 object-scale-down"
-		/>
-		<img src="images/logo-ibm.png" alt="Logo of IBM" class="shrink grow-0 object-scale-down" />
-		<img
-			src="images/logo-microsoft.png"
-			alt="Logo of Microsoft"
-			class="shrink grow-0 object-scale-down"
-		/>
-		<img src="images/logo-hp.png" alt="Logo of HP" class="shrink grow-0 object-scale-down" />
-		<img
-			src="images/logo-vector-graphics.png"
-			alt="Logo of Vector Graphics"
-			class="shrink grow-0 object-scale-down"
-		/>
+		{#each text.customers as { name, icon: src }}
+			<img {src} alt={`Logo of ${name}`} class="shrink grow-0" />
+		{/each}
 	</div>
 </section>
 
 <section>
 	<HeaderParagraph tag="h2">
-		<svelte:fragment slot="h">Clipboard for iOS and Mac OS</svelte:fragment>
-		<svelte:fragment slot="p">
-			Available for free on the App Store. Download for Mac or iOS, sync with iCloud and you’re
-			ready to start adding to your clipboard.
-		</svelte:fragment>
+		<svelte:fragment slot="h">{text.sections.cta.title}</svelte:fragment>
+		<svelte:fragment slot="p">{text.sections.cta.subtitle}</svelte:fragment>
 	</HeaderParagraph>
 	<Cta />
 </section>
