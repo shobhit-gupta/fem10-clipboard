@@ -26,6 +26,8 @@
         shadow-lg
     "
 >
-	<div class="absolute bottom-0 left-0 right-0 top-0 {hoverColor} opacity-0 hover:opacity-100" />
+	<div
+		class="absolute bottom-0 left-0 right-0 top-0 {hoverColor} opacity-0 duration-200 hover:opacity-100"
+	/>
 	<slot />
 </a>
