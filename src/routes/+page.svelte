@@ -23,7 +23,7 @@
         mx-auto
         select-none
         space-y-16
-        bg-[url('images/bg-header-mobile.png')]
+        bg-[url('/images/bg-header-mobile.png')]
         bg-cover
         bg-top
         bg-no-repeat
@@ -31,11 +31,11 @@
         pt-32
         text-center
         md:space-y-14
-        md:bg-[url('images/bg-header-desktop.png')]
+        md:bg-[url('/images/bg-header-desktop.png')]
         md:bg-contain
     "
 >
-	<img src="images/logo.svg" alt="Logo" class="mx-auto h-32 w-32" />
+	<img src="/images/logo.svg" alt="Logo" class="mx-auto h-32 w-32" />
 	<HeaderParagraph tag="h1">
 		<svelte:fragment slot="h">{text.sections.hero.title}</svelte:fragment>
 		<svelte:fragment slot="p">{text.sections.hero.subtitle}</svelte:fragment>
@@ -50,7 +50,7 @@
 	</HeaderParagraph>
 
 	<div class="mx-auto mt-16 grid grid-cols-1 gap-14 md:mt-20 md:grid-cols-2 md:gap-28">
-		<img src="images/image-computer.png" alt="" class="md:max-w-none md:place-self-end" />
+		<img src="/images/image-computer.png" alt="" class="md:max-w-none md:place-self-end" />
 
 		<div
 			class="
@@ -80,7 +80,7 @@
 		<svelte:fragment slot="h">{text.sections.access.title}</svelte:fragment>
 		<svelte:fragment slot="p">{text.sections.access.subtitle}</svelte:fragment>
 	</HeaderParagraph>
-	<img src="images/image-devices.png" alt="" class="mx-auto mb-0 mt-16 md:mt-28" />
+	<img src="/images/image-devices.png" alt="" class="mx-auto mb-0 mt-16 md:mt-28" />
 </section>
 
 <section id="features" class="mt-20 md:mt-24 md:max-w-fit">

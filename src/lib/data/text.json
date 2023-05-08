@@ -37,17 +37,17 @@
     ],
     "features": [
         {
-            "icon": "images/icon-blacklist.svg",
+            "icon": "/images/icon-blacklist.svg",
             "title": "Create blacklists",
             "subtitle": "Ensure sensitive information never makes its way to your clipboard by excluding certain sources."
         },
         {
-            "icon": "images/icon-text.svg",
+            "icon": "/images/icon-text.svg",
             "title": "Plain text snippets",
             "subtitle": "Remove unwanted formatting from copied text for a consistent look."
         },
         {
-            "icon": "images/icon-preview.svg",
+            "icon": "/images/icon-preview.svg",
             "title": "Sneak preview",
             "subtitle": "Quick preview of all snippets on your Clipboard for easy access."
         }
@@ -55,23 +55,23 @@
     "customers": [
         {
             "name": "Google",
-            "icon": "images/logo-google.png"
+            "icon": "/images/logo-google.png"
         },
         {
             "name": "IBM",
-            "icon": "images/logo-ibm.png"
+            "icon": "/images/logo-ibm.png"
         },
         {
             "name": "Microsoft",
-            "icon": "images/logo-microsoft.png"
+            "icon": "/images/logo-microsoft.png"
         },
         {
             "name": "HP",
-            "icon": "images/logo-hp.png"
+            "icon": "/images/logo-hp.png"
         },
         {
             "name": "Vector Graphics",
-            "icon": "images/logo-vector-graphics.png"
+            "icon": "/images/logo-vector-graphics.png"
         }
     ]
 }
