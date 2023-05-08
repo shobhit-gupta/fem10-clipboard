@@ -5,8 +5,8 @@ services:
     tty: true
     container_name: clipboard-landing-page-app
     ports:
-      - "10009:4173"
-      - "11009:5173"
+      - '10009:4173'
+      - '11009:5173'
     volumes:
       - ./:/app
       - clipboard-landing-page-nm:/app/node_modules

@@ -4,18 +4,18 @@
 
 <div
 	class="
+            mx-auto
             mt-12
             flex
             flex-col
-            md:flex-row
-            mx-auto
-            space-y-6
-            md:space-y-0
-            md:space-x-4
             items-stretch
-            md:items-center
             justify-center
+            space-y-6
             md:max-w-fit
+            md:flex-row
+            md:items-center
+            md:space-x-4
+            md:space-y-0
         "
 >
 	<DownloadButton url="#" bg="bg-strongCyan">Download for iOS</DownloadButton>

@@ -12,9 +12,9 @@
 	<svelte:element
 		this={tag}
 		class="
-            text-darkGrayishBlue
-            leading-tight
             font-semibold
+            leading-tight
+            text-darkGrayishBlue
         "
 		class:h-p1__h={tag === 'h1'}
 		class:h-p2__h={tag === 'h2'}
@@ -25,8 +25,8 @@
 
 	<p
 		class="
-            text-grayishBlue
             leading-7
+            text-grayishBlue
             md:leading-8
         "
 		class:h-p1__p={tag === 'h1'}

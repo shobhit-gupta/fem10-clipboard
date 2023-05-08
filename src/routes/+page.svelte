@@ -16,22 +16,22 @@
 
 <header
 	class="
-        bg-[url('images/bg-header-mobile.png')]
-        md:bg-[url('images/bg-header-desktop.png')]
-        bg-no-repeat
-        bg-cover
-        md:bg-contain
-        bg-top
         mx-auto
-        pt-32
-        px-8
-        text-center
-        space-y-16
-        md:space-y-14
         select-none
+        space-y-16
+        bg-[url('images/bg-header-mobile.png')]
+        bg-cover
+        bg-top
+        bg-no-repeat
+        px-8
+        pt-32
+        text-center
+        md:space-y-14
+        md:bg-[url('images/bg-header-desktop.png')]
+        md:bg-contain
     "
 >
-	<img src="images/logo.svg" alt="Logo" class="w-32 h-32 mx-auto" />
+	<img src="images/logo.svg" alt="Logo" class="mx-auto h-32 w-32" />
 
 	<HeaderParagraph tag="h1">
 		<svelte:fragment slot="h">A history of everything you copy</svelte:fragment>
@@ -54,20 +54,20 @@
 		</svelte:fragment>
 	</HeaderParagraph>
 
-	<div class="mt-16 md:mt-20 grid grid-cols-1 md:grid-cols-2 mx-auto gap-14 md:gap-28">
+	<div class="mx-auto mt-16 grid grid-cols-1 gap-14 md:mt-20 md:grid-cols-2 md:gap-28">
 		<img src="images/image-computer.png" alt="" class="md:max-w-none md:place-self-end" />
 
 		<div
 			class="
+                mx-auto
                 flex
                 flex-col
                 space-y-12
+                text-center
+                md:mx-0
                 md:space-y-14
                 md:py-16
                 md:text-left
-                mx-auto
-                md:mx-0
-                text-center
             "
 		>
 			<HeaderParagraph tag="h3" alignment="text-center md:text-left">
@@ -100,7 +100,7 @@
 			few simple clicks.
 		</svelte:fragment>
 	</HeaderParagraph>
-	<img src="images/image-devices.png" alt="" class="mx-auto mt-16 md:mt-28 mb-0" />
+	<img src="images/image-devices.png" alt="" class="mx-auto mb-0 mt-16 md:mt-28" />
 </section>
 
 <section class="mt-20 md:mt-24 md:max-w-fit">
@@ -108,9 +108,9 @@
 		<svelte:fragment slot="h">Supercharge your workflow</svelte:fragment>
 		<svelte:fragment slot="p">We’ve got the tools to boost your productivity.</svelte:fragment>
 	</HeaderParagraph>
-	<div class="mt-24 md:mt-18 grid grid-cols-1 md:grid-cols-3 gap-14 md:gap-8">
+	<div class="md:mt-18 mt-24 grid grid-cols-1 gap-14 md:grid-cols-3 md:gap-8">
 		<div class="flex flex-col items-center space-y-11">
-			<img src="images/icon-blacklist.svg" alt="" class="w-11 h-10" />
+			<img src="images/icon-blacklist.svg" alt="" class="h-10 w-11" />
 			<HeaderParagraph tag="h3">
 				<svelte:fragment slot="h">Create blacklists</svelte:fragment>
 				<svelte:fragment slot="p">
@@ -120,7 +120,7 @@
 			</HeaderParagraph>
 		</div>
 		<div class="flex flex-col items-center space-y-11">
-			<img src="images/icon-text.svg" alt="" class="w-9 h-8" />
+			<img src="images/icon-text.svg" alt="" class="h-8 w-9" />
 			<HeaderParagraph tag="h3">
 				<svelte:fragment slot="h">Plain text snippets</svelte:fragment>
 				<svelte:fragment slot="p">
@@ -129,7 +129,7 @@
 			</HeaderParagraph>
 		</div>
 		<div class="flex flex-col items-center space-y-11">
-			<img src="images/icon-preview.svg" alt="" class="w-12 h-8" />
+			<img src="images/icon-preview.svg" alt="" class="h-8 w-12" />
 			<HeaderParagraph tag="h3">
 				<svelte:fragment slot="h">Sneak preview</svelte:fragment>
 				<svelte:fragment slot="p">
@@ -142,24 +142,24 @@
 
 <section>
 	<div
-		class="flex flex-col md:flex-row justify-center items-center flex-wrap gap-14 md:max-w-fit mx-auto"
+		class="mx-auto flex flex-col flex-wrap items-center justify-center gap-14 md:max-w-fit md:flex-row"
 	>
 		<img
 			src="images/logo-google.png"
 			alt="Logo of Google"
-			class="object-scale-down shrink grow-0"
+			class="shrink grow-0 object-scale-down"
 		/>
-		<img src="images/logo-ibm.png" alt="Logo of IBM" class="object-scale-down shrink grow-0" />
+		<img src="images/logo-ibm.png" alt="Logo of IBM" class="shrink grow-0 object-scale-down" />
 		<img
 			src="images/logo-microsoft.png"
 			alt="Logo of Microsoft"
-			class="object-scale-down shrink grow-0"
+			class="shrink grow-0 object-scale-down"
 		/>
-		<img src="images/logo-hp.png" alt="Logo of HP" class="object-scale-down shrink grow-0" />
+		<img src="images/logo-hp.png" alt="Logo of HP" class="shrink grow-0 object-scale-down" />
 		<img
 			src="images/logo-vector-graphics.png"
 			alt="Logo of Vector Graphics"
-			class="object-scale-down shrink grow-0"
+			class="shrink grow-0 object-scale-down"
 		/>
 	</div>
 </section>

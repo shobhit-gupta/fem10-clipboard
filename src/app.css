@@ -7,7 +7,7 @@
 		@apply text-base md:text-lg;
 	}
 	section {
-		@apply mt-32 md:mt-40 mx-auto px-8;
+		@apply mx-auto mt-32 px-8 md:mt-40;
 	}
 	section:last-of-type {
 		@apply mb-32;
@@ -16,23 +16,23 @@
 
 @layer components {
 	.h-p1 {
-		@apply max-w-3xl mx-auto space-y-4 md:space-y-5;
+		@apply mx-auto max-w-3xl space-y-4 md:space-y-5;
 	}
 	.h-p1__h {
-		@apply text-3xl md:text-5xl tracking-[-0.52px] md:tracking-[-0.75px];
+		@apply text-3xl tracking-[-0.52px] md:text-5xl md:tracking-[-0.75px];
 	}
 	.h-p1__p {
-		@apply md:text-xl tracking-[0.12px] md:tracking-[0.15px];
+		@apply tracking-[0.12px] md:text-xl md:tracking-[0.15px];
 	}
 
 	.h-p2 {
-		@apply max-w-3xl mx-auto space-y-4 md:space-y-5;
+		@apply mx-auto max-w-3xl space-y-4 md:space-y-5;
 	}
 	.h-p2__h {
-		@apply text-[1.75rem] md:text-4xl tracking-[-0.46px] md:tracking-[-0.59px];
+		@apply text-[1.75rem] tracking-[-0.46px] md:text-4xl md:tracking-[-0.59px];
 	}
 	.h-p2__p {
-		@apply md:text-lg tracking-[0.12px] md:tracking-[0.14px];
+		@apply tracking-[0.12px] md:text-lg md:tracking-[0.14px];
 	}
 
 	.h-p3 {

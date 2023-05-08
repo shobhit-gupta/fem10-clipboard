@@ -1,25 +1,25 @@
 <footer
 	class="
-        bg-grayishBlue/10
         flex
         flex-col
-        md:flex-row
         items-center
         justify-center
-        py-10
         gap-10
+        bg-grayishBlue/10
+        py-10
+        md:flex-row
         md:gap-36
     "
 >
-	<img src="images/logo.svg" alt="" class="w-14 h-14" />
+	<img src="images/logo.svg" alt="" class="h-14 w-14" />
 	<div
-		class="grid grid-cols-1 md:grid-cols-3 md:max-w-fit text-center md:text-left gap-5 md:gap-x-8 md:gap-y-3 tracking-[0.135px] text-darkGrayishBlue"
+		class="grid grid-cols-1 gap-5 text-center tracking-[0.135px] text-darkGrayishBlue md:max-w-fit md:grid-cols-3 md:gap-x-8 md:gap-y-3 md:text-left"
 	>
-		<a href="/" class="md:order-1 hover:text-strongCyan">FAQs</a>
-		<a href="/" class="md:order-4 hover:text-strongCyan">Contact Us</a>
-		<a href="/" class="md:order-2 hover:text-strongCyan">Privacy Policy</a>
-		<a href="/" class="md:order-5 hover:text-strongCyan">Press Kit</a>
-		<a href="/" class="md:order-3 hover:text-strongCyan">Install Guide</a>
+		<a href="/" class="hover:text-strongCyan md:order-1">FAQs</a>
+		<a href="/" class="hover:text-strongCyan md:order-4">Contact Us</a>
+		<a href="/" class="hover:text-strongCyan md:order-2">Privacy Policy</a>
+		<a href="/" class="hover:text-strongCyan md:order-5">Press Kit</a>
+		<a href="/" class="hover:text-strongCyan md:order-3">Install Guide</a>
 	</div>
 	<div class="flex flex-row gap-10 md:gap-6">
 		<a href="/">
