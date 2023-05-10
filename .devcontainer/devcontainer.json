@@ -36,7 +36,8 @@
 				"svelte.svelte-vscode",
 				"esbenp.prettier-vscode",
 				"bradlc.vscode-tailwindcss",
-				"csstools.postcss"
+				"csstools.postcss",
+				"ms-azuretools.vscode-docker"
 			]
 		}
 	}
